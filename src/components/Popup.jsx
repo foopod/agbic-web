@@ -14,7 +14,8 @@ const Popup = ({cartridge, isVisible, closeHandler, isFav, favToggleHandler}) =>
     <div
       style={{
         visibility: isVisible ? "visible" : "hidden",
-        opacity: isVisible ? "1" : "0"
+        opacity: isVisible ? "1" : "0",
+        pointerEvents: isVisible ? 'auto' : 'none'
       }}
       className='overlay'
       onClick={clickOutside}
