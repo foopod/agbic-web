@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import './Popup.css'
 import { FaHeart } from 'react-icons/fa';
 
