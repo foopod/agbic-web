@@ -3,7 +3,7 @@ import './App.css'
 import jsonData from './assets/data.json';
 import ListItem from './components/ListItem';
 import Popup from './components/Popup';
-import { FaHeart } from 'react-icons/fa';
+import { FaFilter, FaHeart } from 'react-icons/fa';
 
 function App() {
   const [listOfCartridges, setListOfCartridges] = useState(jsonData)
@@ -68,7 +68,7 @@ function App() {
 
   return (
     <>
-        <button onClick={toggleFilter}> filter by <FaHeart size={'0.8em'} style={{color: 'hotpink'}}/> </button>
+        <button onClick={toggleFilter}><FaFilter/></button>
         <Popup cartridge={jsonData[selected-1]} isVisible={showPopup} favToggleHandler={() => favToggle(selected)} closeHandler={() => {
           setShowPopup(false);
         }} isFav={favourites.includes(selected)}/>
