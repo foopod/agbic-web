@@ -23,10 +23,7 @@
 
 .card svg {
   position: absolute;
-  top:5px;
-  right: 5px;
-  background-color: white;
-  border-radius: 50%;
-  padding: 3px;
+  bottom:5px;
+  left: 5px;
   font-size: 1.2em;
 }
