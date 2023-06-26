@@ -1,0 +1,41 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2em;
+  margin: 2em;
+  max-width: 60em;
+  margin: auto;
+}
+
+html{
+  background-color: white;
+}
+
+button {
+  position:fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  background-color: white;
+  border: 1px grey solid;
+  border-radius: 10px;
+  font-size: 1.2em;
+  padding: 0.2em 0.5em;
+  cursor: pointer;
+}
+
+button svg {
+  padding: 0 5px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }  
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }  
+}
